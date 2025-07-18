@@ -1,0 +1,104 @@
+.service_container {
+  width: 90%;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service_title {
+  text-align: center;
+}
+
+.service_card {
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 25px;
+  width: 500px;
+  background: linear-gradient(135deg, rgba(0, 255, 30, 0.3), rgb(0, 0, 0));
+  box-shadow: 0px 10px 100px 0px rgba(0, 255, 0, 0.171);
+  border-radius: 25px;
+  border: 1px rgba(255, 255, 255, 0.503) solid;
+}
+
+.service_card:nth-child(2) {
+  width: 400px;
+  padding: 15px;
+  height: fit-content;
+  position: relative;
+  box-sizing: border-box;
+  gap: 25px;
+  flex-direction: column;
+  background: none;
+  background-color: rgb(16, 16, 16);
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  border: 1px rgba(255, 255, 255, 0.503) solid;
+}
+
+.service_card h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.service_description {
+  text-align: center;
+}
+
+.new_price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: rgb(163, 255, 163);
+}
+
+.service_time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: rgb(174, 242, 255);
+}
+
+.service_price_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2px 20px;
+  border-radius: 20px;
+  gap: 10px;
+  background-color: rgba(17, 17, 17, 0.39);
+  backdrop-filter: blur(5px);
+  border: 1px rgba(255, 255, 255, 0.339) solid;
+  font-size: 14px;
+}
+
+.service_list {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.service_badge {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(235, 234, 208);
+  justify-content: start;
+  align-items: start;
+  background-color: rgba(17, 17, 17, 0.39);
+  backdrop-filter: blur(5px);
+  border: 1px rgba(255, 255, 255, 0.339) solid;
+  padding: 15px;
+  border-radius: 20px;
+}

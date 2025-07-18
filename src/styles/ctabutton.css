@@ -1,0 +1,15 @@
+.ctabutton {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    height: 60%;
+    gap: 20px;
+    font-size: 21px;
+    color: rgb(255, 255, 255);
+    padding: 0px 20px;
+    box-sizing: border-box;
+    border-radius: var(--default_border_radius);
+    border: 1px rgba(255, 255, 255, 0.3) none;
+    cursor: pointer;
+  }

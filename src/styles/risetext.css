@@ -1,0 +1,11 @@
+.risetext_container {
+  display: flex;
+  gap: 5;
+  flex-wrap: wrap;
+}
+
+
+.risetext_container h2{
+    font-size: 80px;
+  }
+  
