@@ -11,7 +11,7 @@ import "../styles/service.css";
 import MarqueeText from "./MarqueeText";
 export default function Service() {
   return (
-    <section className="service_container">
+    <section className="service_container" style={{ position: "relative" }}>
       <div className="service_card">
         <h2>Strona Internetowa</h2>
         <div
@@ -79,6 +79,29 @@ export default function Service() {
           </p> */}
         </div>
       </div>
+      <svg
+        width="220"
+        height="40"
+        viewBox="0 0 220 40"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{
+          position: "absolute",
+          right: "25%",
+          bottom: "20%",
+          rotate:"30deg",
+          scale: 2.5,
+          zIndex: -1,
+        }}
+      >
+        <path
+          d="M0 20 Q100 0, 200 20"
+          stroke="rgb(97, 255, 97)"
+          stroke-width="2"
+          fill="none"
+          stroke-linecap="round"
+        />
+        <circle cx="210" cy="20" r="2" fill="rgb(97, 255, 97)" />
+      </svg>
     </section>
   );
 }

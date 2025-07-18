@@ -7,6 +7,7 @@ import ScrollableContainer from "./components/ScrollableContainer";
 import RiseText from "./components/RiseText";
 import EngageBox from "./components/EngageBox";
 import Service from "./components/Service";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 function App() {
   return (
@@ -14,7 +15,10 @@ function App() {
       <div className="app">
         <Navbar />
         <br></br>
+        
+
         <Landing />
+        
         <br></br>
         <br></br> <br></br>
         <br></br>
@@ -36,6 +40,7 @@ function App() {
         <br></br>
         <br></br>
         <br></br>
+       
         <br></br>
         <br></br>
         <br></br>
