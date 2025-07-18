@@ -49,6 +49,7 @@ export default function Landing() {
           <Laptop size={90} stroke="rgb(148, 255, 109)" strokeWidth={0.9} />
         </ScrollableContainer>
       </div>
+      <p style={{ position: "absolute", color: "gray" }}>strona w budowie</p>
 
       <div style={{ position: "absolute", right: -50, top: 250 }}>
         <ScrollableContainer
