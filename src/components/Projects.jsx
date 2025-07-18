@@ -5,7 +5,7 @@ import "../styles/projects.css";
 export default function Projects() {
   const data = [
     {
-      image: "/Realizacje/UCzecha.webp",
+      image: "/StronaPodKlucz/Realizacje/UCzecha.webp",
       title: "U Czecha",
       link: "https://u-czecha.pl",
       displayedLink: "U-czecha.pl",
@@ -14,7 +14,7 @@ export default function Projects() {
     },
 
     {
-      image: "/Realizacje/Invoxly.webp",
+      image: "/StronaPodKlucz/Realizacje/Invoxly.webp",
       title: "Invoice Manager",
       link: "#",
       displayedLink: "#######",

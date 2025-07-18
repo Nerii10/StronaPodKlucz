@@ -10,7 +10,7 @@ export default function Navbar({ mobile }) {
       <>
         <nav className="navbar">
           <img
-            src="/Logo/Logo_key_White_Large.webp"
+            src="/StronaPodKlucz/Logo/Logo_key_White_Large.webp"
             className="navbar_logo"
           ></img>
 
