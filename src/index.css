@@ -25,6 +25,7 @@ html {
 
 body {
   --default_border_radius: 20px;
+  --default_accent_color: rgb(179, 74, 232);
   --default_bg_color: rgb(14, 14, 14);
 
   margin: 0;

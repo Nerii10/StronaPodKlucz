@@ -11,12 +11,12 @@
 .form_circle {
   width: 300px;
   height: 300px;
-  background-color: rgba(38, 255, 0, 0.996);
+  background-color: var(--default_accent_color);
   position: absolute;
   border-radius: 30%;
   animation: blur 10s linear infinite, morph 8s ease-in-out infinite;
   scale: 0.8;
-  box-shadow: 0px 10px 50px 0px rgba(0, 255, 0, 0.494);
+  box-shadow: 0px 10px 50px 0px rgba(179, 74, 232, 0.494);
   filter: url(#distort);
 }
 
@@ -59,8 +59,8 @@
   flex-direction: column;
   gap: 25px;
   width: 400px;
-  background: linear-gradient(135deg, rgba(0, 255, 30, 0.418), rgb(0, 0, 0));
-  box-shadow: 0px 10px 100px 0px rgba(0, 255, 0, 0.171);
+  background: linear-gradient(135deg, rgb(144, 30, 209), rgb(0, 0, 0));
+  box-shadow: 0px 10px 100px 0px rgba(143, 30, 209, 0.294);
   border-radius: 25px;
   border: 1px rgba(255, 255, 255, 0.503) solid;
 }

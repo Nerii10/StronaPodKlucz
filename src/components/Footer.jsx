@@ -23,7 +23,7 @@ export default function Footer() {
   return (
     <section className="footer">
       <div className="footer_sign">
-        <Milestone size={30} />
+        <Milestone size={30} stroke="rgb(137, 41, 137)" strokeWidth={0.9} />
       </div>
       <div style={{ position: "absolute", right: 0, top: -69 }}>
         <ScrollableContainer
@@ -32,7 +32,7 @@ export default function Footer() {
           initialscale={[0.6, 0.6]}
           initialRotation={[150, -50]}
         >
-          <Circle size={90} stroke="rgb(58, 134, 30)" strokeWidth={0.9} />
+          <Circle size={90} stroke="rgb(117, 30, 134)" strokeWidth={0.9} />
         </ScrollableContainer>
       </div>
       <div className="footer_bottom_hr"></div>

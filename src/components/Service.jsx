@@ -95,12 +95,12 @@ export default function Service() {
       >
         <path
           d="M0 20 Q100 0, 200 20"
-          stroke="rgb(97, 255, 97)"
+          stroke="rgb(218, 97, 255)"
           stroke-width="2"
           fill="none"
           stroke-linecap="round"
         />
-        <circle cx="210" cy="20" r="2g" fill="rgb(97, 255, 97)" />
+        <circle cx="210" cy="20" r="2g" fill="rgb(237, 97, 255)" />
       </svg>
     </section>
   );
