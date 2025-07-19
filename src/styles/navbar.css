@@ -54,6 +54,8 @@
   height: 90%;
   gap: 50px;
   font-size: 21px;
+  filter: hue-rotate(160deg);
+
   padding: 0px 20px;
   box-sizing: border-box;
 }
@@ -63,6 +65,7 @@
   justify-content: start;
   align-items: center;
   flex-direction: row;
+  filter: hue-rotate(160deg);
   height: 50px;
   gap: 50px;
   font-size: 21px;

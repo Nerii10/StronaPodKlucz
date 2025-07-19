@@ -20,7 +20,7 @@ export default function CtaButton({ content, style, onClick, gradient }) {
         gradient
           ? {
               background:
-                "linear-gradient(150deg, rgb(37, 248, 47) 0%, rgb(7, 21, 1))",
+                "linear-gradient(150deg, rgb(193, 77, 255) 0%, rgb(20, 1, 21))",
               backgroundClip: "padding-box",
             }
           : {}
@@ -28,7 +28,7 @@ export default function CtaButton({ content, style, onClick, gradient }) {
       whileHover={{
         ...(gradient && {
           background:
-            "linear-gradient(66deg, rgb(36, 201, 45) 50%, rgb(17, 75, 23))",
+            "linear-gradient(66deg, rgb(138, 36, 201) 50%, rgb(60, 17, 75))",
           backgroundClip: "padding-box",
         }),
         scale: 1.05,

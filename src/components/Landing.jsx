@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 import ScrollableContainer from "./ScrollableContainer";
 export default function Landing() {
-  const badge_color = "rgb(106, 255, 95)";
+  const badge_color = "rgb(210, 95, 255)";
   const badge_size = 25;
   const badges = [
     <>
@@ -58,7 +58,7 @@ export default function Landing() {
           initialscale={[0.8, 1]}
           initialRotation={[150, -50]}
         >
-          <Laptop size={90} stroke="rgb(148, 255, 109)" strokeWidth={0.9} />
+          <Laptop size={90} stroke="rgb(210, 95, 255)" strokeWidth={0.9} />
         </ScrollableContainer>
       </div>
 
@@ -69,7 +69,7 @@ export default function Landing() {
           initialscale={[0.8, 1]}
           initialRotation={[-150, 80]}
         >
-          <Smartphone size={90} stroke="rgb(92, 254, 113)" strokeWidth={0.9} />
+          <Smartphone size={90} stroke="rgb(210, 95, 255)" strokeWidth={0.9} />
         </ScrollableContainer>
       </div>
       <motion.h1 className="landing_title">Strona Pod Klucz</motion.h1>
@@ -99,7 +99,9 @@ export default function Landing() {
         <CtaButton
           gradient={false}
           style={{ padding: "20px 40px", height: "50px" }}
-          onClick={()=>{scrollToSection("Kontakt")}}
+          onClick={() => {
+            scrollToSection("Kontakt");
+          }}
           content={
             <>
               Wyślij mi wiadomość
@@ -109,7 +111,9 @@ export default function Landing() {
         ></CtaButton>
 
         <CtaButton
-          onClick={()=>{scrollToSection("Realizacje")}}
+          onClick={() => {
+            scrollToSection("Realizacje");
+          }}
           content={
             <>
               Zobacz moje projekty <ScreenShare />

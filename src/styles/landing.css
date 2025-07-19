@@ -10,11 +10,11 @@
 
 .landing_title {
   font-size: 60px;
-  background: linear-gradient(135deg, #ffffff, rgb(72, 255, 72));
+  background: linear-gradient(135deg, #ffffff, rgb(203, 72, 255));
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text;
-  filter: drop-shadow(rgba(130, 255, 116, 0.2) 0px 0px 20px);
+  filter: drop-shadow(rgba(227, 116, 255, 0.2) 0px 0px 20px);
 }
 
 .landing_subtitle {
@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  color: rgb(175, 255, 175);
+  color: rgb(237, 199, 255);
 }
 
 .landing_description {
@@ -74,7 +74,7 @@
   background-clip: padding-box;
   border-radius: var(--default_border_radius);
   background-color: rgb(13, 13, 13);
-  color: rgb(183, 255, 183);
+  color: rgb(244, 208, 255);
   border: 1px rgba(255, 255, 255, 0.374) solid;
   display: flex;
   justify-content: center;
