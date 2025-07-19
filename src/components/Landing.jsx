@@ -37,9 +37,21 @@ export default function Landing() {
     </>,
   ];
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const rect = el.getBoundingClientRect();
+      const scrollTop = window.scrollY + rect.top - 250; // ⬅️ odstęp od góry
+      window.scrollTo({
+        top: scrollTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <section className="landing">
-      <div style={{ position: "absolute", left: -50, top: 150 }}>
+      <div className="laptop">
         <ScrollableContainer
           initialX={[-50, 50]}
           initialY={[-10, 20]}
@@ -49,19 +61,17 @@ export default function Landing() {
           <Laptop size={90} stroke="rgb(148, 255, 109)" strokeWidth={0.9} />
         </ScrollableContainer>
       </div>
-      <p style={{ position: "absolute", color: "gray" }}>strona w budowie</p>
 
-      <div style={{ position: "absolute", right: -50, top: 250 }}>
+      <div className="smartphone">
         <ScrollableContainer
           initialX={[50, -50]}
           initialY={[-10, 20]}
           initialscale={[0.8, 1]}
-          initialRotation={[-10, 80]}
+          initialRotation={[-150, 80]}
         >
           <Smartphone size={90} stroke="rgb(92, 254, 113)" strokeWidth={0.9} />
         </ScrollableContainer>
       </div>
-      <br></br>
       <motion.h1 className="landing_title">Strona Pod Klucz</motion.h1>
       <h2 className="landing_subtitle">
         Tworzę <SlidingText inputs={["nowoczesne", "szybkie", "piękne"]} />{" "}
@@ -89,6 +99,7 @@ export default function Landing() {
         <CtaButton
           gradient={false}
           style={{ padding: "20px 40px", height: "50px" }}
+          onClick={()=>{scrollToSection("Kontakt")}}
           content={
             <>
               Wyślij mi wiadomość
@@ -98,6 +109,7 @@ export default function Landing() {
         ></CtaButton>
 
         <CtaButton
+          onClick={()=>{scrollToSection("Realizacje")}}
           content={
             <>
               Zobacz moje projekty <ScreenShare />

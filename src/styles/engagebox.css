@@ -23,6 +23,8 @@
   overflow: hidden;
   border: 1px rgba(255, 255, 255, 0.3) solid;
   padding: 40px;
+  --fixed_font_size: 80px;
+
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -32,4 +34,104 @@
 
 .engage_box img {
   width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .engage_box {
+    width: 90%;
+    aspect-ratio: 1/0.6;
+    border-radius: 40px;
+  }
+
+  .engage_box_content {
+    border-radius: 40px;
+    padding: 40px;
+    --fixed_font_size: 60px;
+    backdrop-filter: blur(10px);
+  }
+
+  .engage_box img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .engage_box {
+    width: 90%;
+    aspect-ratio: 1/0.6;
+    border-radius: 40px;
+  }
+
+  .engage_box_content {
+    border-radius: 40px;
+    padding: 40px;
+    --fixed_font_size: 50px;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .engage_box img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .engage_box {
+    width: 90%;
+    aspect-ratio: 1/0.6;
+    border-radius: 40px;
+  }
+
+  .engage_box_content {
+    border-radius: 40px;
+    padding: 40px;
+    --fixed_font_size: 30px;
+    backdrop-filter: blur(10px);
+  }
+
+  .engage_box img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .engage_box {
+    width: 90%;
+    padding: 20px 0px;
+    box-sizing: content-box;
+    border-radius: 40px;
+  }
+
+  .engage_box_content {
+    border-radius: 40px;
+    padding: 30px;
+    --fixed_font_size: 30px;
+    backdrop-filter: blur(10px);
+  }
+
+  .engage_box img {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .engage_box {
+    width: 90%;
+    padding: 10px 0px;
+    box-sizing: content-box;
+    border-radius: 40px;
+  }
+
+  .engage_box_content {
+    border-radius: 40px;
+    padding: 20px;
+    --fixed_font_size: 25px;
+    backdrop-filter: blur(10px);
+  }
+
+  .engage_box img {
+    width: 100%;
+  }
 }

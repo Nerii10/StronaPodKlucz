@@ -8,10 +8,11 @@
   align-items: stretch;
   background-color: rgb(20, 20, 20);
   border-radius: 30px;
-  border-top-left-radius: 200px;
-  border-bottom-right-radius: 200px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   position: relative;
   overflow: hidden;
+  --fixed_font_size: 80px;
 }
 
 .project_card {
@@ -84,8 +85,8 @@
 
 .project_title {
   padding: 20px;
- width: 100%;
-  flex:1;
+  width: 100%;
+  flex: 1;
   box-sizing: border-box;
   z-index: 2;
   background-color: rgb(31, 31, 31);
@@ -101,4 +102,33 @@
 .project_title p {
   margin: 0;
   color: rgb(214, 214, 214);
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects {
+    --fixed_font_size: 80px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projects {
+    --fixed_font_size: 60px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .projects {
+    --fixed_font_size: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projects {
+    --fixed_font_size: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .projects {
+    --fixed_font_size: 30px;
+  }
 }

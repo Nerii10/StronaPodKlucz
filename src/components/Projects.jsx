@@ -24,11 +24,14 @@ export default function Projects() {
   ];
 
   return (
-    <motion.section className="projects">
-      <MarqueeText>Portfolio</MarqueeText>
-      {data.map((project) => (
-        <Project info={project} />
-      ))}
-    </motion.section>
+    <>
+      <MarqueeText style={{ fontSize: "60px" }}>Portfolio</MarqueeText>
+      <br></br>
+      <motion.section className="projects" id="Realizacje">
+        {data.map((project) => (
+          <Project info={project} />
+        ))}
+      </motion.section>
+    </>
   );
 }

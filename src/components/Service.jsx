@@ -12,7 +12,7 @@ import MarqueeText from "./MarqueeText";
 export default function Service() {
   return (
     <section className="service_container" style={{ position: "relative" }}>
-      <div className="service_card">
+      <div className="service_card" id="Usługi">
         <h2>Strona Internetowa</h2>
         <div
           className="form_circle"
@@ -88,7 +88,7 @@ export default function Service() {
           position: "absolute",
           right: "25%",
           bottom: "20%",
-          rotate:"30deg",
+          rotate: "30deg",
           scale: 2.5,
           zIndex: -1,
         }}
@@ -100,7 +100,7 @@ export default function Service() {
           fill="none"
           stroke-linecap="round"
         />
-        <circle cx="210" cy="20" r="2" fill="rgb(97, 255, 97)" />
+        <circle cx="210" cy="20" r="2g" fill="rgb(97, 255, 97)" />
       </svg>
     </section>
   );

@@ -1,6 +1,6 @@
 import ScrollableContainer from "./ScrollableContainer";
 import "../styles/risetext.css";
-export default function RiseText({ children }) {
+export default function RiseText({ children, style }) {
   function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
@@ -21,7 +21,7 @@ export default function RiseText({ children }) {
             initialscale={[Scale, 1]}
             initialX={[X, 0]}
           >
-            <h2 style={{ margin: 0 }}>{letter.toUpperCase()}</h2>
+            <h2 style={{ ...style, margin: 0 }}>{letter.toUpperCase()}</h2>
           </ScrollableContainer>
         );
       })}

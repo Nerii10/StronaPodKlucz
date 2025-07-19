@@ -49,7 +49,6 @@ function App() {
         <br></br> <br></br>
         <br></br>
         <br></br>
-        <RiseText>kontakt</RiseText>
         <br></br> <br></br>
         <br></br>
         <br></br>

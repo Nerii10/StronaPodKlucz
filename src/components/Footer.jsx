@@ -9,6 +9,17 @@ import {
 } from "lucide-react";
 import ScrollableContainer from "./ScrollableContainer";
 export default function Footer() {
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const rect = el.getBoundingClientRect();
+      const scrollTop = window.scrollY + rect.top - 250; // ⬅️ odstęp od góry
+      window.scrollTo({
+        top: scrollTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <section className="footer">
       <div className="footer_sign">
@@ -49,10 +60,16 @@ export default function Footer() {
         <div className="footer_section">
           <h2>Sekcje</h2>
           <ul>
-            <li>Usługi</li>
-            <li>O Mnie</li>
-            <li>Realizacje</li>
-            <li>Kontakt</li>
+            {["Usługi", "Realizacje", "Kontakt"].map((section) => (
+              <li
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  scrollToSection(section);
+                }}
+              >
+                {section}
+              </li>
+            ))}
           </ul>
         </div>
       </div>
