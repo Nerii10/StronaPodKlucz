@@ -24,7 +24,6 @@
   border: 1px rgba(255, 255, 255, 0.3) solid;
   padding: 40px;
   --fixed_font_size: 80px;
-
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -81,6 +80,8 @@
     width: 90%;
     aspect-ratio: 1/0.6;
     border-radius: 40px;
+    background-attachment: local;
+    background-size: 150% 150%;
   }
 
   .engage_box_content {
@@ -114,7 +115,6 @@
     width: 100%;
   }
 }
-
 
 @media only screen and (max-width: 500px) {
   .engage_box {
